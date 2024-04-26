@@ -25,11 +25,10 @@ document.addEventListener('DOMContentLoaded', () => {
         }
 });
 
-function flickSwitch(arr) {
-    arr= ['bicycle', 'jarmony', 'flick', 'sheep', 'flick']
-  let flick = true;
-  let res = arr.map(item=> item =='flick' ? flick = !flick : flick);
-  console.log(res)
+(function flickSwitch(arr) {
+    arr = ['bicycle', 'jarmony', 'flick', 'sheep', 'flick']
+    let flick = true;
+    let res = arr.map(item => item == 'flick' ? flick = !flick : flick);
+    console.log(res)
     return res
-}
-flickSwitch();
+}) ();
